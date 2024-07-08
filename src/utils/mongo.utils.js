@@ -1,13 +1,16 @@
-//Desesctructuracion
-export { connect } from "mongoose"
+import mongoose from 'mongoose';
 
-async function connectToMongo(uri){
-    try{
-        await connect(uri)
-        console.log("Connect to mongo db")
-    }catch(error){
-        console.log(error)
+const connectToMongo = async (mongoUri) => {
+    try {
+        await mongoose.connect(mongoUri, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+        console.log('Connected to MongoDB');
+    } catch (error) {
+        console.error('Error connecting to MongoDB', error);
+        process.exit(1);
     }
-}
+};
 
 export default connectToMongo;
