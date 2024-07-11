@@ -4,7 +4,7 @@ import cors from "cors"
 import notFoundPath from "./src/middlewares/notFoundPath.js";
 import errorHandler from "./src/middlewares/errorHandler.js";
 import connectToMongo from "./src/utils/mongo.utils.js";
-
+import router from "./src/routes/index.router"
 import "dotenv/config.js";
 
 
@@ -39,6 +39,6 @@ server.get("/", (req, res, next) => {
         return next(error)
     }
 });
-
+server.use("api/v1", router)
 server.use(errorHandler)
 server.use(notFoundPath)

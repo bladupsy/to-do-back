@@ -8,7 +8,8 @@
     "start": "node ./index.js",
     "dev": "nodemon ./index.js",
     "users": "node ./data/users.js",
-    "cards": "node ./data/cards.js"
+    "cards": "node ./data/cards.js",
+    "activity": "node ./data/activities.js"
   },
   "keywords": [],
   "author": "",
