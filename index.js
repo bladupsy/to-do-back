@@ -4,7 +4,7 @@ import cors from "cors"
 import notFoundPath from "./src/middlewares/notFoundPath.js";
 import errorHandler from "./src/middlewares/errorHandler.js";
 import connectToMongo from "./src/utils/mongo.utils.js";
-import router from "./src/routes/index.router"
+import router from "./src/routes/index.router.js"
 import "dotenv/config.js";
 
 

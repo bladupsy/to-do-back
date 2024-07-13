@@ -5,7 +5,7 @@ import {
   readOne,
   updateOne,
   destroyOne,
-} from "../controllers/cards.controller.js";
+} from "../controllers/card.controller.js";
 
 const router = Router();
 

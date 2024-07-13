@@ -5,7 +5,7 @@ import {
   readOne,
   updateOne,
   destroyOne,
-} from "../controllers/lists.controller.js";
+} from "../controllers/list.controller.js";
 
 const router = Router();
 

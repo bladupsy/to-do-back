@@ -12,5 +12,5 @@ const schema = new Schema(
   { timestamps: true }
 );
 
-const Board = model(collection, schema);
-export default Board;
+const Card = model(collection, schema);
+export default Card;

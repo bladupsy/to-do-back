@@ -1,8 +1,6 @@
 import "dotenv/config.js";
 import connectToMongo from "../src/utils/mongo.utils.js";
-import Card from "../src/models/Card.model.js";
 import faker from "@faker-js/faker";
-import Activity from "../src/models/Activity.model.js";
 import Board from "../src/models/Board.model.js";
 
 const boards = [
